@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: tahoma, Arial;
+    background-color: #343434;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+@media (max-width:768px) {
+    .repos-container {
+        max-width: 100%;
+    }
+
+    .get-repos input {
+        max-height: 50px;
+        font-size: 18px;
+    }
+
+    .get-repos .get-button {
+        max-height: 50px;
+        font-size: 14px !important;
+        line-height: 25px;
+    }
+}
+
+.item {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: context-menu;
+}
+
+li:hover {
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+.icon-star {
+    color: #ffd700;
+    font-size: 17px;
+    transition: all .7s;
+}
+
+.stars:hover .icon-star {
+    transform: rotate(180deg)
+}
+
+.repos-container {
+    width: 800px;
+    margin: auto;
+}
+
+.repos-container h1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.get-repos {
+    padding: 20px;
+    display: flex;
+    background-color: #eee;
+    border-radius: 5px 5px 0 0;
+}
+
+.get-repos input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.get-repos input:focus {
+    border: 1px solid #ccc;
+}
+
+.get-repos .get-button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 110px;
+    text-align: center;
+}
+
+.get-repos .get-button:hover {
+    background-color: #444;
+}
+
+.show-data {
+    padding: 20px;
+    background-color: #e0e0e0;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    font-size: 18px;
+    /* display: none; */
+}
